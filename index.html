@@ -26,7 +26,20 @@
 		<ul class="menu-container">
 			<li class="menu-option"><a href="./game.html">startup a game</li>
 			<li class="menu-option"><a href="./map.html">map</li>
-			<li class="menu-option"><a href="./options.html">proxy</a></li>
+			<li class="menu-option menu-option--game">
+  <a href="javascript:void(0)" onclick="openGame()" > proxy </button>
+<script>
+function openGame() {
+	var win = window.open ()
+	var url = "https://interstellar-tau-kohl.vercel.app/rx/"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%"
+	iframe.style.height = "100%"
+	iframe.style.border = "none"
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+}
+</script>
 			<li class="menu-option"><a href="./quitgame.html">quit game</a></li>
 		</ul>		
 	</main>
