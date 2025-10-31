@@ -25,8 +25,19 @@
 	<main class="menu-content">
 		<ul class="menu-container menu-container--game">
 			<li class="menu-option menu-option--game">
-  <a href="javascript:void(0)" onclick="window.open('https://sites.google.com/boontonschools.org/xxxxxxxxxxxxxxxx/flix-hq-movies', '_blank');">Movies</a>
-</li>
+  <a href="javascript:void(0)" onclick="openGame()" > Play in Fullscreen </button>
+<script>
+function openGame() {
+	var win = window.open ()
+	var url = "https://sites.google.com/boontonschools.org/xxxxxxxxxxxxxxxx/cuphead"
+	var iframe = win.document.createElement('iframe')
+	iframe.style.width = "100%"
+	iframe.style.height = "100%"
+	iframe.style.border = "none"
+	iframe.src = url
+	win.document.body.appendChild(iframe)
+}
+</script>
 			<li class="menu-option menu-option--game"><a href="https://sites.google.com/boontonschools.org/xxxxxxxxxxxxxxxx/cuphead">CupHead</a></li
 		</ul>		
 	</main>
